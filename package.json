@@ -4,7 +4,8 @@
   "description": "Template",
   "scripts": {
     "lint:fix": "which eslint && eslint --fix . --ext .ts",
-    "prepublish": "npm run lint:fix",
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "prepublish": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "dist/index.js",
@@ -17,7 +18,6 @@
   },
   "dependencies": {
     "@types/x-ray": "^2.3.3",
-    "eslint-config-airbnb-typescript": "^7.0.0",
     "qs": "^6.9.1",
     "x-ray": "^2.3.4"
   },
@@ -28,6 +28,8 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
     "typescript": "^3.8.3"
   }
 }
