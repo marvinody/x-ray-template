@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@types/x-ray": "^2.3.3",
-    "qs": "^6.9.1",
+    "qs": "^6.9.7",
     "x-ray": "^2.3.4"
   },
   "homepage": "https://github.com/marvinody/x-ray-ts-template#readme",
